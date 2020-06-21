@@ -1,0 +1,181 @@
+/* Some CSS styling */
+
+#sketchpadapp {
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#clear_button{
+  margin-left: 15px;
+  font-weight: bold;
+  color: blue;
+}
+
+#confidence{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 7.5%;
+}
+
+#content{
+  margin: 0 auto;
+  padding: 2% 15%;
+  padding-bottom: 0;
+}
+
+.welcome{
+   text-align: center;
+   position: relative;
+   color: honeydew;
+   background-color: greenyellow;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   font-weight: bold;
+   font-family: 'Prompt', sans-serif;
+   
+}
+
+#footer{
+  text-align: center;
+  background-color: #292b2c;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 0%;
+}
+
+
+#predict_button{
+  margin-right: 15px;
+  color: blue;
+  font-weight: bold;
+}
+
+#prediction_heading{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 7.5%;
+}
+
+#result{
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+}
+
+#sketchpad {
+    /* float:left; */
+    height:250px;
+    width:250px;
+    border:2px solid #888;
+    border-radius:4px;
+    /* position:relative; /* Necessary for correct mouse co-ords in Firefox */ 
+}
+
+#source{
+  padding: 0 100px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#title{
+  padding: 1.5% 15%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 10px;
+    -webkit-appearance: none;
+    background: #eee;
+    border: 1px solid #888;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons_div{
+  margin-bottom: 30px;
+}
+
+.heading{
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  display: inline;
+}
+
+.leftside{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4%;
+  /* padding-left: 10%; */
+}
+
+
+.predicted_answer{
+  text-align: center;
+  margin: 0 auto;
+  padding: 3% 5%;
+  padding-top: 0;
+  /* padding-left: 10%; */
+}
+
+.responsive_img{
+  width: 75%;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.social-media-icons{
+  margin: 10px 40px;
+}
+
+.source-column{
+  padding: 3% 2%;
+}
+
+.source-h2{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+hr {
+  border: dotted #808080 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+p{
+  font-family: 'Source Code Pro', monospace,sans-serif;
+  margin-top: 1%;
+}
+
+@media (min-width: 720px) {
+  .leftside{
+    padding-left: 10%;
+  }
+}

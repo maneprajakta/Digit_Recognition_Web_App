@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>Digit Recognition WebApp</title>
+
+  <meta name="viewport" content="width=device-width">
+  <!-- GoogleFont -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Calistoga|Josefin+Sans:400,700|Pacifico&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/b3aed9cb07.js" crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+</head>
+
+<body onload="init()">
+
+ 
+  <h1 class="welcome">Hello World of Object Recognition!</h1>
+  <section id="title">
+    <h1 class="heading">Handwritten Digit Recognition Web App</h1>
+    <p>Convolution Neural Network is trained on MNIST data set in Keras.Further the trained model and weigths are saved as json file and .h5 file.
+    Lastly the model is converted to Tensorflow.js Layer format and though js used for prediction.Source code is available on github.</p>
+  </section>
+
+  <section id="content">
+    <div id="sketchpadapp">
+
+      <div class="row">
+        <div class="leftside">
+
+          <div class="">
+            <canvas id="sketchpad" height="200" width="200">
+            </canvas>
+          </div>
+
+          <div class="buttons_div">
+            <button type="button" class="btn btn-dark" id="predict_button">Predict</button>
+            <button type="button" class="btn btn-dark" id="clear_button">&nbsp Clear &nbsp</button>
+          </div>
+        </div>
+
+        <div class="predicted_answer col-sm-6">
+          <h2 id="prediction_heading">Prediction</h2>
+          <h1 id="result">-</h1>
+          <p id="confidence">Confidence: -</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+
+  <footer id="footer">
+    <a href="https://www.linkedin.com/in/maneprajakta/" target="_blank"><i class="social-media-icons fab fa-2x fa-linkedin"></i></a>
+    <a href="https://github.com/maneprajakta" target="_blank"><i class="social-media-icons fab fa-2x fa-github" aria-hidden="true"></i></i></a>
+  </footer>
+
+  <script src="js/main.js" charset="utf-8"></script>
+
+</body>
+
+</html>

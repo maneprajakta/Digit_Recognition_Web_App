@@ -4,9 +4,7 @@
 <br>
 <h3>Structure of App</h3>
 <h2> keras - > Tensorflow.js ->(html + css + javascript)->github pages</h1>
-<br>
   <h3>Hello World of Object Recognition!</h3>
-  <br>
  <h2>Aim:</h2> To make a convolution neural network to recognise handwritten digits by training the model on MNIST dataset available in keras.
  <br>
  <h2>MNIST DATASET:</h2>The training dataset contain 60000 images and testing contain 10000 images .Each image is 28x28 pixel and grey scale.
@@ -17,5 +15,5 @@
  <br>⚈ 30 epochs are used.
  <br>⚈ Categorical_loss is loss function and adam is used for optimization.
  <br>⚈ Model gives 99.15% accuracy.
-<h2>For Deployment:<h2>Save model using tensorflowjs converters as json file and weight as .h5 file.Use Tensorflow.js to load model and predict in javascript file
+<h2>For Deployment:</h2>Save model using tensorflowjs converters as json file and weight as .h5 file.Use Tensorflow.js to load model and predict in javascript file
 
